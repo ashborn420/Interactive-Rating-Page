@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Overpass";
+}
+
+body{
+    height: 100vh;
+    background-color:  hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: hsl(213, 19%, 15%);
+    color: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 90%;
+    }
+    .container .rating p{
+    text-align: center;
+    }
+    .container .rating  ul li{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 18px;
+        margin-left: -15px;
+    } 
+}
+
+.container .rating .image{
+    width: 50px;
+    height: 50px;
+    background-color:hsl(213, 19%, 20%);
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .rating h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.container .rating p{
+    color:  hsl(217, 12%, 63%);
+    line-height: 1.5;
+}
+
+.container .rating ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container .rating ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:  hsl(217, 12%, 63%);
+    background-color: hsl(210, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    transition-duration: 1s;
+}
+
+.container .rating ul li:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.container .rating button {
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition-duration: 1s;
+}   
+
+.container .rating button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.container .thanks{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thanks .image{
+    margin: 30px 0;
+}
+
+.thanks .select{
+    background-color: hsl(213, 19%, 20%);
+    color: hsl(25, 97%, 53%);
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.thanks .thx{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.thanks p{
+    color:  hsl(217, 12%, 63%);
+    text-align: center;
+}
